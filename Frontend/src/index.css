@@ -1,0 +1,20 @@
+/* For Firefox and modern browsers */
+.chatWindow, .chats {
+    scrollbar-color: #111 #222; /* thumb color, track color */
+    scrollbar-width: thin;      /* makes it thinner, optional */
+  }
+  
+  /* For WebKit browsers: Chrome, Edge, Safari */
+  .chatWindow::-webkit-scrollbar,
+  .chats::-webkit-scrollbar {
+    width: 10px;
+    background: #222; /* scrollbar track color */
+  }
+  .chatWindow::-webkit-scrollbar-thumb,
+  .chats::-webkit-scrollbar-thumb {
+    background: #111; /* scrollbar thumb color (the draggable part) */
+    border-radius: 5px;
+  }
+  
+
+  

@@ -1,0 +1,145 @@
+.chats {
+  max-width: 768px;
+  width: 100%;
+  padding: 1rem 2rem;
+  flex: 1;
+}
+
+.userDiv {
+  display: flex;
+  justify-content: flex-end;
+  /* Right align user messages */
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.gptDiv {
+  display: flex;
+  justify-content: flex-start;
+  /* Left align GPT messages */
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.userMessage {
+  background-color: #0084ff;
+  /* Blue like iMessage */
+  color: white;
+  padding: 12px 16px;
+  border-radius: 18px;
+  max-width: 100%;
+  /* Limit width */
+  word-wrap: break-word;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.gptMessage {
+  background-color: #2f2f2f;
+  /* Dark gray */
+  color: #ececec;
+  padding: 12px 16px;
+  border-radius: 18px;
+  max-width: 100%;
+  /* Limit width */
+  word-wrap: break-word;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: justify;
+}
+.gptMessage p {
+  text-align: justify;
+}
+
+
+/* Remove the old styles that were causing issues */
+.userMessage {
+  margin-left: 0;
+  /* Remove fixed margin */
+}
+
+
+.hljs {
+  border-radius: 8px !important;
+  background-color: #1a1a1a !important;
+  padding: 16px !important;
+  margin: 8px 0 !important;
+}
+
+pre {
+  white-space: pre-wrap;
+  background-color: #1a1a1a;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 8px 0;
+}
+
+code {
+  background-color: #2a2a2a;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+}
+
+/* Welcome message styling */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #ececec;
+}
+
+.welcome-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+.example-card {
+  background-color: #2f2f2f;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #404040;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.example-card:hover {
+  background-color: #404040;
+}
+
+.example-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #ececec;
+}
+
+.example-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #8e8ea0;
+}
+
+/* Chat.css */
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .chatArea {
+    width: 100%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,184 @@
+.chatWindow {
+  background-color: #171717;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto; /* Add this line */
+}
+
+  /* navbar */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #2e2e2e;
+    background-color: #171717;
+  }
+  
+  .navbar span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ececec;
+  }
+  
+  .userIconDiv {
+    position: absolute;
+    right: 2rem;
+  }
+  
+  .userIcon {
+    background-color: #19c37d;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  /* chat input */
+  .chatInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #171717;
+  }
+  
+  .inputBox {
+    width: 100%;
+    position: relative;
+    max-width: 768px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+  }
+  
+  input {
+    width: 100%;
+    border: 1px solid #404040;
+    background-color: #2f2f2f;
+    padding: 12px 50px 12px 16px;
+    font-size: 16px;
+    border-radius: 12px;
+    color: #ececec;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  input:focus {
+    border-color: #5c7cfa;
+    box-shadow: 0 0 0 3px rgba(92, 124, 250, 0.1);
+  }
+  
+  input::placeholder {
+    color: #8e8ea0;
+  }
+  
+  #submit {
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    position: absolute;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #19c37d;
+    border-radius: 6px;
+    color: white;
+    transition: background-color 0.2s ease;
+  }
+  
+  #submit:hover {
+    background-color: #16a370;
+  }
+  
+  #submit:disabled {
+    background-color: #404040;
+    cursor: not-allowed;
+  }
+  
+  .info {
+    font-size: 12px;
+    padding: 0.5rem;
+    color: #8e8ea0;
+    margin-top: 8px;
+  }
+  
+  /* dropdown css */
+  .dropDown {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    width: 200px;
+    background-color: rgb(46, 214, 158);
+    padding: 8px;
+    border-radius: 12px;
+    text-align: left;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #404040;
+  }
+  
+  .dropDownItem {
+    font-size: 14px;
+    margin: 4px 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dropDownItem:hover {
+    background-color: #404040;
+  }
+  
+  /* For the whole app */
+::-webkit-scrollbar {
+  width: 10px;               /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #111;          /* track (behind scrollbar) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3e3e3e;    /* scrollbar color */
+  border-radius: 10px;       /* round edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333;    /* hover effect */
+}
+
+/* ChatWindow.css */
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .chatWindow {
+    width: 100%;
+    margin-left: 0; /* no sidebar pushing it */
+  }
+
+  .menuIcon {
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+  }
+}

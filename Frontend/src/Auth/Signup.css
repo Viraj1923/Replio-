@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f9f9f9;
+  color: #111;
+}
+
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Needed for absolute logo */
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 30px;
+  background-color: white;
+  color: black;
+}
+
+.signup-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 360px;
+}
+
+.signup-box h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Reset Tailwind/DaisyUI defaults */
+.signup-box input {
+  all: unset;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  outline: none;
+  background: #fff;
+  color: #111;
+  text-align: left;
+}
+
+/* Primary button reset */
+.signup-box .btn-primary {
+  all: unset;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  border-radius: 24px;
+  background: #111;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup-box .btn-primary:hover {
+  background: #333;
+}
+
+.login-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #888;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+  width: 40%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Secondary button reset */
+.signup-box .btn-secondary {
+  all: unset;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #f3f3f3;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #111;
+}
+
+.signup-box .btn-secondary:hover {
+  background: #e8e8e8;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #666;
+}
