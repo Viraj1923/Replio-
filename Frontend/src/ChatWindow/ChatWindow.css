@@ -182,3 +182,55 @@
     display: inline-block;
   }
 }
+
+
+/* Mobile adjustments - COMPLETE THE EXISTING SECTION */
+@media (max-width: 768px) {
+  .chatWindow {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .navbar {
+    padding: 1rem;
+    position: relative;
+  }
+
+  .navbar::before {
+    content: "☰";
+    position: absolute;
+    left: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ececec;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+
+  .navbar::before:hover {
+    background-color: #2f2f2f;
+  }
+
+  .userIconDiv {
+    right: 1rem;
+  }
+
+  .inputBox {
+    margin: 0 1rem;
+  }
+
+  .chatInput {
+    padding: 1rem 0;
+  }
+
+  .dropDown {
+    right: 1rem;
+    width: 180px;
+    background-color: #2f2f2f;
+  }
+
+  .dropDownItem {
+    color: #ececec;
+  }
+}

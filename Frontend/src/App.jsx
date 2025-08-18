@@ -1,4 +1,5 @@
 import "./App.css";
+import "./mobile.js";
 import Sidebar from "./Sidebar/Sidebar.jsx";
 import ChatWindow from "./ChatWindow/ChatWindow.jsx";
 import { MyContext } from "./MyContext.jsx";

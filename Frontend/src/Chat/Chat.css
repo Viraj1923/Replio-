@@ -143,3 +143,43 @@ code {
     padding: 10px;
   }
 }
+
+
+/* Mobile responsiveness - ADD TO EXISTING FILE */
+@media (max-width: 768px) {
+  .chats {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .welcome-title {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+
+  .welcome-examples {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .welcome-container {
+    padding: 1rem;
+  }
+
+  .userMessage,
+  .gptMessage {
+    max-width: 85%;
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  pre {
+    font-size: 13px;
+    padding: 12px;
+    overflow-x: scroll;
+  }
+
+  code {
+    font-size: 13px;
+  }
+}

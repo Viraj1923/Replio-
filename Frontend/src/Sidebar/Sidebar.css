@@ -145,3 +145,37 @@
     left: 0;           /* slides in */
   }
 }
+
+/* Mobile-specific - COMPLETE THE EXISTING SECTION */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 280px;
+    height: 100vh;
+    background-color: #0c0c0c;
+    transition: left 0.3s ease-in-out;
+    z-index: 1001;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+  }
+
+  .sidebar.show + .sidebar-overlay {
+    display: block;
+  }
+}
