@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use((req, res, next) => {
     const origin = req.headers.origin;
-    if (origin === 'http://localhost:5173') {
+    if (origin === 'https://replio-backend.onrender.com') {
       res.setHeader('Access-Control-Allow-Origin', origin);
     }
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
