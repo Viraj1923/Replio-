@@ -15,3 +15,37 @@
     height: 100vh;
   }
   
+/* ✅ Global responsive layout fixes */
+@media (max-width: 768px) {
+  /* Any flex container becomes a column on mobile */
+  *[class*="row"],
+  *[class*="flex"],
+  .app,
+  .container,
+  .content {
+    flex-direction: column !important;
+  }
+
+  /* Any grid collapses into 1 column */
+  *[class*="grid"] {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  /* Prevent overflow on small screens */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  /* Images, videos, iframes always scale */
+  img, video, iframe {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Add breathing room on mobile */
+  .container, .content {
+    padding: 0.75rem !important;
+  }
+}
