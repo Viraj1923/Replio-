@@ -109,7 +109,7 @@ function ChatWindow() {
                         document.querySelector(".sidebar").classList.toggle("show");
                     }}
                 >
-                    <i className="fa-solid fa-bars"></i>
+                    {/* <i className="fa-solid fa-bars"></i> */}
                 </div>
 
                 <span>
